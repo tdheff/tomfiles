@@ -6,5 +6,6 @@ set nobackup
 set background=dark
 set expandtab
 set tabstop=2
+"colorscheme base16-default
 
 execute pathogen#infect()

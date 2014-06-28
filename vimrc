@@ -53,6 +53,9 @@ set number
 set showbreak=↪
 colorscheme base16-ocean
 
+" Map space to leader
+let mapleader = "\<Space>"
+let g:mapleader = "\<Space>"
 
 " Disable ex mode
 nnoremap Q <nop>

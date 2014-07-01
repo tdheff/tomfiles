@@ -22,6 +22,7 @@ Plugin 'honza/vim-snippets'
 Plugin 'bling/vim-airline'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'Lokaltog/vim-easymotion'
+Plugin 'groenewege/vim-less'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -46,16 +47,22 @@ set nobackup
 set background=dark
 set laststatus=2
 set expandtab
-set tabstop=2
+set shiftwidth=2
+set softtabstop=2
 set guifont=Source\ Code\ Pro\ for\ Powerline:h15
 let g:airline_powerline_fonts=1
 set number
 set showbreak=↪
 colorscheme base16-ocean
 
+" Map for escape possibly?
+
 " Map space to leader
 let mapleader = "\<Space>"
 let g:mapleader = "\<Space>"
+
+" CtrlP alt for buffer switch
+nnoremap <leader><C-p> :CtrlPBuffer<CR>
 
 " Disable ex mode
 nnoremap Q <nop>

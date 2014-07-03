@@ -23,6 +23,7 @@ Plugin 'bling/vim-airline'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'Lokaltog/vim-easymotion'
 Plugin 'groenewege/vim-less'
+Plugin 'pangloss/vim-javascript'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -54,6 +55,9 @@ let g:airline_powerline_fonts=1
 set number
 set showbreak=↪
 colorscheme base16-ocean
+
+" vim-javascript settings
+" let g:javascript_conceal=1
 
 " Map for escape possibly?
 

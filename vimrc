@@ -24,6 +24,7 @@ Plugin 'airblade/vim-gitgutter'
 Plugin 'Lokaltog/vim-easymotion'
 Plugin 'groenewege/vim-less'
 Plugin 'pangloss/vim-javascript'
+Plugin 'kchmck/vim-coffee-script'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -54,7 +55,11 @@ set guifont=Source\ Code\ Pro\ for\ Powerline:h15
 let g:airline_powerline_fonts=1
 set number
 set showbreak=↪
-colorscheme base16-ocean
+colorscheme base16-railscasts
+
+" airline setings
+let g:airline_left_sep=''
+let g:airline_right_sep=''
 
 " vim-javascript settings
 " let g:javascript_conceal=1

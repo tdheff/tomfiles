@@ -25,6 +25,8 @@ Plugin 'Lokaltog/vim-easymotion'
 Plugin 'groenewege/vim-less'
 Plugin 'pangloss/vim-javascript'
 Plugin 'kchmck/vim-coffee-script'
+Plugin 'dart-lang/dart-vim-plugin'
+Plugin 'jlanzarotta/bufexplorer'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -51,24 +53,45 @@ set laststatus=2
 set expandtab
 set shiftwidth=2
 set softtabstop=2
-set guifont=Source\ Code\ Pro\ for\ Powerline:h15
+set guifont=Envy\ Code\ R:h16
 let g:airline_powerline_fonts=1
 set number
 set showbreak=↪
-colorscheme base16-railscasts
+set t_Co=256
+let base16colorspace=256
+colorscheme base16-melon
+
+" Map space to leader
+let mapleader = "\<Space>"
+let g:mapleader = "\<Space>"
+
+" Easymotion settings
+map <Leader> <Plug>(easymotion-prefix)
+" replace normal search
+map  / <Plug>(easymotion-sn)
+omap / <Plug>(easymotion-tn)
+" correct n mappings
+map  n <Plug>(easymotion-next)
+map  N <Plug>(easymotion-prev)
+" bidirectional find with s
+nmap s <Plug>(easymotion-s)
+" better hjkl
+map <Leader>l <Plug>(easymotion-lineforward)
+map <Leader>j <Plug>(easymotion-j)
+map <Leader>k <Plug>(easymotion-k)
+map <Leader>h <Plug>(easymotion-linebackward)
+" keep place in line
+let g:EasyMotion_startofline = 0
 
 " airline setings
 let g:airline_left_sep=''
 let g:airline_right_sep=''
+let g:airline_detect_whitespace=0
 
 " vim-javascript settings
 " let g:javascript_conceal=1
 
 " Map for escape possibly?
-
-" Map space to leader
-let mapleader = "\<Space>"
-let g:mapleader = "\<Space>"
 
 " CtrlP alt for buffer switch
 nnoremap <leader><C-p> :CtrlPBuffer<CR>

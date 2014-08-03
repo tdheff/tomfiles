@@ -53,7 +53,6 @@ set laststatus=2
 set expandtab
 set shiftwidth=2
 set softtabstop=2
-set guifont=Envy\ Code\ R:h16
 let g:airline_powerline_fonts=1
 set number
 set showbreak=↪
@@ -61,9 +60,16 @@ set t_Co=256
 let base16colorspace=256
 colorscheme base16-melon
 
+" Font setter
+"set guifont=Envy\ Code\ R\ 13
+
 " Map space to leader
 let mapleader = "\<Space>"
 let g:mapleader = "\<Space>"
+
+" Easy buffer switching
+nnoremap <C-j> :bn<Return>
+nnoremap <C-k> :bp<Return>
 
 " Easymotion settings
 map <Leader> <Plug>(easymotion-prefix)

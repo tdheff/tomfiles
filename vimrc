@@ -1,6 +1,7 @@
 " Set Shell
 set shell=/bin/bash
 
+
 set nocompatible              " be iMproved, required
 filetype off                  " required
 
@@ -27,6 +28,7 @@ Plugin 'pangloss/vim-javascript'
 Plugin 'kchmck/vim-coffee-script'
 Plugin 'dart-lang/dart-vim-plugin'
 Plugin 'jlanzarotta/bufexplorer'
+Plugin 'dag/vim-fish'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -56,9 +58,10 @@ set softtabstop=2
 let g:airline_powerline_fonts=1
 set number
 set showbreak=↪
+let g:airline_theme = "hybridline"
 set t_Co=256
 let base16colorspace=256
-colorscheme base16-melon
+colorscheme base16-ocean
 
 " Font setter
 "set guifont=Envy\ Code\ R\ 13

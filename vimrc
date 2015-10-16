@@ -93,10 +93,15 @@ map <Leader>h <Plug>(easymotion-linebackward)
 " keep place in line
 let g:EasyMotion_startofline = 0
 
-" airline setings
+" airline settings
 let g:airline_left_sep=''
 let g:airline_right_sep=''
 let g:airline#extensions#whitespace#enabled = 1
+
+" syntastic settings
+if executable('eslint')
+  let g:syntastic_javascript_checkers = ['eslint']
+end
 
 " vim-javascript settings
 " let g:javascript_conceal=1

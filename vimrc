@@ -14,6 +14,7 @@ call vundle#begin()
 " let Vundle manage Vundle, required
 Plugin 'gmarik/Vundle.vim'
 Plugin 'scrooloose/nerdtree'
+Plugin 'scrooloose/syntastic'
 Plugin 'chriskempson/base16-vim'
 Plugin 'kien/ctrlp.vim'
 Plugin 'MarcWeber/vim-addon-mw-utils'
@@ -61,7 +62,7 @@ set showbreak=↪
 let g:airline_theme = "hybridline"
 set t_Co=256
 let base16colorspace=256
-colorscheme base16-ocean
+colorscheme base16-material
 
 " Font setter
 "set guifont=Envy\ Code\ R\ 13
@@ -95,7 +96,7 @@ let g:EasyMotion_startofline = 0
 " airline setings
 let g:airline_left_sep=''
 let g:airline_right_sep=''
-let g:airline_detect_whitespace=0
+let g:airline#extensions#whitespace#enabled = 1
 
 " vim-javascript settings
 " let g:javascript_conceal=1

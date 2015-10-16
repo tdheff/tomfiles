@@ -13,8 +13,9 @@ then
   echo "Installing vim configs..."
   # copy vimrc
   cp ./vimrc ~/.vimrc
-  # copy vim directory
-  cp -r ./vim ~/.vim
+  # copy vim colors
+  mkdir ~/.vim/colors
+  cp -r ./vim/colors/* ~/.vim/colors/
 
   echo "Done. Start vim and then run :PluginInstall"
 fi

@@ -1,50 +1,47 @@
 " Set Shell
 set shell=/bin/bash
 
+let $TERM = "xterm-256color"
+set t_Co=256
 
 set nocompatible              " be iMproved, required
 filetype off                  " required
 
-" set the runtime path to include Vundle and initialize
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
-" alternatively, pass a path where Vundle should install plugins
-"call vundle#begin('~/some/path/here')
+""""""""""""""""""""""""""""""""
+" plug.vim
+call plug#begin('~/.vim/plugged')
 
-" let Vundle manage Vundle, required
-Plugin 'gmarik/Vundle.vim'
-Plugin 'scrooloose/nerdtree'
-Plugin 'scrooloose/syntastic'
-Plugin 'chriskempson/base16-vim'
-Plugin 'kien/ctrlp.vim'
-Plugin 'MarcWeber/vim-addon-mw-utils'
-Plugin 'tomtom/tlib_vim'
-Plugin 'garbas/vim-snipmate'
-Plugin 'honza/vim-snippets'
-Plugin 'bling/vim-airline'
-Plugin 'airblade/vim-gitgutter'
-Plugin 'Lokaltog/vim-easymotion'
-Plugin 'groenewege/vim-less'
-Plugin 'pangloss/vim-javascript'
-Plugin 'kchmck/vim-coffee-script'
-Plugin 'dart-lang/dart-vim-plugin'
-Plugin 'jlanzarotta/bufexplorer'
-Plugin 'dag/vim-fish'
+" basics
+Plug 'scrooloose/nerdtree'
+Plug 'Lokaltog/vim-easymotion'
+Plug 'osyo-manga/vim-over'
+Plug 'bling/vim-airline'
+Plug 'scrooloose/syntastic'
+Plug 'ervandew/supertab'
 
-" All of your Plugins must be added before the following line
-call vundle#end()            " required
-filetype plugin indent on    " required
-" To ignore plugin indent changes, instead use:
-"filetype plugin on
-"
-" Brief help
-" :PluginList          - list configured plugins
-" :PluginInstall(!)    - install (update) plugins
-" :PluginSearch(!) foo - search (or refresh cache first) for foo
-" :PluginClean(!)      - confirm (or auto-approve) removal of unused plugins
-"
-" see :h vundle for more details or wiki for FAQ
-" Put your non-Plugin stuff after this line
+" git
+Plug 'airblade/vim-gitgutter'
+Plug 'tpope/vim-fugitive'
+
+" lang specific
+Plug 'groenewege/vim-less'
+Plug 'pangloss/vim-javascript'
+Plug 'kchmck/vim-coffee-script'
+Plug 'dag/vim-fish'
+
+" aesthetic 
+Plug 'chriskempson/base16-vim'
+Plug 'altercation/vim-colors-solarized'
+
+" fuzzy search
+Plug 'kien/ctrlp.vim'
+Plug 'FelikZ/ctrlp-py-matcher'
+
+"Plug 'jlanzarotta/bufexplorer'
+
+call plug#end()
+" end plug.vim
+""""""""""""""""""""""""""""""
 
 set backspace=2
 syntax on
@@ -60,9 +57,10 @@ let g:airline_powerline_fonts=1
 set number
 set showbreak=↪
 let g:airline_theme = "hybridline"
-set t_Co=256
 let base16colorspace=256
+let g:solarized_termcolors=256
 colorscheme base16-material
+"colorscheme solarized 
 
 " Font setter
 "set guifont=Envy\ Code\ R\ 13
@@ -74,6 +72,9 @@ let g:mapleader = "\<Space>"
 " Easy buffer switching
 nnoremap <C-j> :bn<Return>
 nnoremap <C-k> :bp<Return>
+
+" vim-over
+nnoremap <Leader><C-s> :OverCommandLine<Return>%s/
 
 " Easymotion settings
 map <Leader> <Plug>(easymotion-prefix)
@@ -98,18 +99,35 @@ let g:airline_left_sep=''
 let g:airline_right_sep=''
 let g:airline#extensions#whitespace#enabled = 1
 
+" ultisnips settings
+let g:UltiSnipsExpandTrigger="<tab>"
+let g:UltiSnipsJumpForwardTrigger="<c-b>"
+let g:UltiSnipsJumpBackwardTrigger="<c-z>"
+
 " syntastic settings
 if executable('eslint')
   let g:syntastic_javascript_checkers = ['eslint']
 end
-
-" vim-javascript settings
-" let g:javascript_conceal=1
-
-" Map for escape possibly?
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
 
 " CtrlP alt for buffer switch
 nnoremap <leader><C-p> :CtrlPBuffer<CR>
+" ctrlp improvements
+let g:ctrlp_user_command = 'ag %s -i --nocolor --nogroup --hidden
+      \ --ignore .git
+      \ --ignore .svn
+      \ --ignore .hg
+      \ --ignore .DS_Store
+      \ --ignore "**/*.pyc"
+      \ -g ""'
+let g:ctrlp_match_func = { 'match': 'pymatcher#PyMatch' }
+let g:ctrlp_max_files=0
 
 " Disable ex mode
 nnoremap Q <nop>

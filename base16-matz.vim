@@ -1,5 +1,5 @@
-" Base16 material (https://github.com/chriskempson/base16)
-" Scheme: Sean Washington (http://seanwash.com)
+" Base16 Matz (https://github.com/chriskempson/base16)
+" Scheme: Tommy Heffernan (http://github.com/tdheff)
 
 " This enables the coresponding base16-shell script to run so that
 " :colorscheme works in terminals supported by base16-shell scripts
@@ -7,27 +7,27 @@
 "   let g:base16_shell_path=base16-builder/output/shell/
 if !has('gui_running')
   if exists("g:base16_shell_path")
-    execute "silent !/bin/sh ".g:base16_shell_path."/base16-material.".&background.".sh"
+    execute "silent !/bin/sh ".g:base16_shell_path."/base16-matz.".&background.".sh"
   endif
 endif
 
 " GUI color definitions
 let s:gui00 = "263238"
-let s:gui01 = "263238"
-let s:gui02 = "37474f"
-let s:gui03 = "707880"
-let s:gui04 = "b5bd68"
-let s:gui05 = "ecefef"
-let s:gui06 = "ecefef"
-let s:gui07 = "ffffff"
-let s:gui08 = "cc6666"
-let s:gui09 = "cc6666"
-let s:gui0A = "f0c674"
-let s:gui0B = "b5bd68"
-let s:gui0C = "8abeb7"
-let s:gui0D = "81a2be"
-let s:gui0E = "b294bb"
-let s:gui0F = "cc6666"
+let s:gui01 = "37474f"
+let s:gui02 = "455a64"
+let s:gui03 = "546e7a"
+let s:gui04 = "90a4ae"
+let s:gui05 = "b0bec5"
+let s:gui06 = "cfd8dc"
+let s:gui07 = "eceff1"
+let s:gui08 = "f44336"
+let s:gui09 = "ff5722"
+let s:gui0A = "ffc107"
+let s:gui0B = "4caf50"
+let s:gui0C = "00bcd4"
+let s:gui0D = "2196f3"
+let s:gui0E = "9575cd"
+let s:gui0F = "e91e63"
 
 " Terminal color definitions
 let s:cterm00 = "00"
@@ -59,7 +59,7 @@ endif
 " Theme setup
 hi clear
 syntax reset
-let g:colors_name = "base16-material"
+let g:colors_name = "base16-matz"
 
 " Highlighting function
 fun <sid>hi(group, guifg, guibg, ctermfg, ctermbg, attr)
@@ -145,7 +145,7 @@ call <sid>hi("Folded",        s:gui03, s:gui01, s:cterm03, s:cterm01, "")
 call <sid>hi("IncSearch",     s:gui01, s:gui09, s:cterm01, s:cterm09, "none")
 call <sid>hi("Italic",        "", "", "", "", "none")
 call <sid>hi("Macro",         s:gui08, "", s:cterm08, "", "")
-call <sid>hi("MatchParen",    s:gui07, s:gui0D, s:cterm07, s:cterm0D,  "")
+call <sid>hi("MatchParen",    s:gui00, s:gui03, s:cterm00, s:cterm03,  "")
 call <sid>hi("ModeMsg",       s:gui0B, "", s:cterm0B, "", "")
 call <sid>hi("MoreMsg",       s:gui0B, "", s:cterm0B, "", "")
 call <sid>hi("Question",      s:gui0D, "", s:cterm0D, "", "")

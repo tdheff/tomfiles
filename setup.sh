@@ -22,6 +22,7 @@ then
   # make color folder and copy scheme
   mkdir -p ~/.vim/colors
   cp ./base16-matz.vim ~/.vim/colors/
+  cp ./base16-melonalternate.vim ~/.vim/colors/
 
   # instal
   echo "Done."
@@ -48,3 +49,13 @@ then
   # copy colorscheme
   cp ./shell_colors.sh ~/.shell_colors.sh
 fi
+
+# git config with prompt
+read -p "Install git config? [y/N]? " -n 1 -r
+if [[ $REPLY =~ ^[Yy]$ ]]
+then
+  echo "Installing git config..."
+  # copy vimrc
+  cp ./gitconfig ~/.gitconfig
+fi
+

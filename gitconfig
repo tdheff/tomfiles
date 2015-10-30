@@ -1,0 +1,29 @@
+[user]
+	email = tdheff@gmail.com
+	name = Tommy Heffernan
+[core]
+	editor = vim
+[push]
+	default = simple
+
+[alias]
+	aa = add -A
+	acp = "!f() { git add -A && git commit -m \"$1\" && git push; }; f"
+	bak = "!f() { git cb `echo "$(git rev-parse --abbrev-ref HEAD)-$(date +%s)"` && git pb && git co -; }; f"
+	bra = branch -a
+	cm = commit -m
+	co = checkout
+	cb = checkout -b
+	df = diff
+	dfc = diff --cached
+	lg = log --graph --pretty=format:'%C(yellow)%d%Creset %C(bold blue)%s%Creset %Cgreen(%cr) %Cred<%an>%Creset' --abbrev-commit --date=relative
+	mm = !git fetch origin master && git merge origin/master
+	pb = "!f() { git push --set-upstream origin `git rev-parse --abbrev-ref HEAD`; }; f"
+	prm = "!f() { hub pull-request -m \"$1\n$HUB_PR_BODY_TEMPLATE\" | xargs open; }; f"
+	rbc = rebase --continue
+	rbm = !git fetch origin master && git rebase -i origin/master
+	st = status -sb
+	subup = !git pull --recurse-submodules && git submodule update
+	tagd = "!f() { git tag -d \"$1\"; git push origin \":refs/tags/$1\"; }; f"
+	tagsync = "!f() { git tag -l | xargs git tag -d; git fetch; }; f"
+	trim = "!f() { git fetch && git remote prune origin; git branch --merged | grep -v \"^\\*\\|master$\" | xargs -n 1 git branch -d; }; f"

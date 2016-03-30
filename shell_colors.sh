@@ -1,37 +1,37 @@
 #!/bin/sh
-# Base16 Matz - Shell color setup script
-# Tommy Heffernan (http://github.com/tdheff)
+# Base16 Duotone-DarkSea - Shell color setup script
+# adapted from: Simurai (https://github.com/simurai/duotone-dark-sea-syntax/)
 
 if [ "${TERM%%-*}" = 'linux' ]; then
     # This script doesn't support linux console (use 'vconsole' template instead)
     return 2>/dev/null || exit 0
 fi
 
-color00="26/32/38" # Base 00 - Black
-color01="f4/43/36" # Base 08 - Red
-color02="4c/af/50" # Base 0B - Green
-color03="ff/c1/07" # Base 0A - Yellow
-color04="21/96/f3" # Base 0D - Blue
-color05="95/75/cd" # Base 0E - Magenta
-color06="00/bc/d4" # Base 0C - Cyan
-color07="b0/be/c5" # Base 05 - White
-color08="54/6e/7a" # Base 03 - Bright Black
+color00="1d/26/2f" # Base 00 - Black
+color01="29/8d/ff" # Base 08 - Red
+color02="70/8f/85" # Base 0B - Green
+color03="29/e0/a3" # Base 0A - Yellow
+color04="47/eb/b4" # Base 0D - Blue
+color05="5c/a8/ff" # Base 0E - Magenta
+color06="5c/ff/c9" # Base 0C - Cyan
+color07="57/71/8e" # Base 05 - White
+color08="4a/5f/78" # Base 03 - Bright Black
 color09=$color01 # Base 08 - Bright Red
 color10=$color02 # Base 0B - Bright Green
 color11=$color03 # Base 0A - Bright Yellow
 color12=$color04 # Base 0D - Bright Blue
 color13=$color05 # Base 0E - Bright Magenta
 color14=$color06 # Base 0C - Bright Cyan
-color15="ec/ef/f1" # Base 07 - Bright White
-color16="ff/57/22" # Base 09
-color17="e9/1e/63" # Base 0F
-color18="37/47/4f" # Base 01
-color19="45/5a/64" # Base 02
-color20="90/a4/ae" # Base 04
-color21="cf/d8/dc" # Base 06
-color_foreground="b0/be/c5" # Base 05
-color_background="26/32/38" # Base 00
-color_cursor="b0/be/c5" # Base 05
+color15="eb/f4/ff" # Base 07 - Bright White
+color16="24/cc/94" # Base 09
+color17="6b/b0/ff" # Base 0F
+color18="27/32/3f" # Base 01
+color19="40/53/68" # Base 02
+color20="53/6c/88" # Base 04
+color21="7e/b6/f6" # Base 06
+color_foreground="57/71/8e" # Base 05
+color_background="1d/26/2f" # Base 00
+color_cursor="57/71/8e" # Base 05
 
 if [ -n "$TMUX" ]; then
   # tell tmux to pass the escape sequences through
@@ -79,13 +79,13 @@ printf $printf_template 21 $color21
 # foreground / background / cursor color
 if [ -n "$ITERM_SESSION_ID" ]; then
   # iTerm2 proprietary escape codes
-  printf $printf_template_custom Pg b0bec5 # forground
-  printf $printf_template_custom Ph 263238 # background
-  printf $printf_template_custom Pi b0bec5 # bold color
-  printf $printf_template_custom Pj 455a64 # selection color
-  printf $printf_template_custom Pk b0bec5 # selected text color
-  printf $printf_template_custom Pl b0bec5 # cursor
-  printf $printf_template_custom Pm 263238 # cursor text
+  printf $printf_template_custom Pg 57718e # forground
+  printf $printf_template_custom Ph 1d262f # background
+  printf $printf_template_custom Pi 57718e # bold color
+  printf $printf_template_custom Pj 405368 # selection color
+  printf $printf_template_custom Pk 57718e # selected text color
+  printf $printf_template_custom Pl 57718e # cursor
+  printf $printf_template_custom Pm 1d262f # cursor text
 else
   printf $printf_template_var 10 $color_foreground
   printf $printf_template_var 11 $color_background

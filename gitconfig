@@ -1,10 +1,29 @@
 [user]
+	name = Tommy Heffernan 
 	email = tdheff@gmail.com
-	name = Tommy Heffernan
-[core]
-	editor = vim
+
+[credential]
+	helper = osxkeychain
+
 [push]
 	default = simple
+
+[color]
+	diff = auto
+	status = auto
+	branch = auto
+	interactive = auto
+	ui = true
+	pager = true
+
+[color "branch"]
+	remote = white
+
+[color "status"]
+	added = yellow
+	changed = cyan
+	untracked = magenta
+	deleted = red
 
 [alias]
 	aa = add -A
@@ -14,12 +33,18 @@
 	cm = commit -m
 	co = checkout
 	cb = checkout -b
+	cp = cherry-pick
+	cpc = cherry-pick --continue
 	df = diff
+	dif = diff
 	dfc = diff --cached
+	fixup = "!f() { git add -A && git commit --fixup HEAD && git rebase --interactive --autosquash HEAD~2; }; f"
+	hotfix = "!f() { git add -A && git commit --fixup HEAD && git rebase --interactive --autosquash HEAD~2 && git push -f ; }; f"
 	lg = log --graph --pretty=format:'%C(yellow)%d%Creset %C(bold blue)%s%Creset %Cgreen(%cr) %Cred<%an>%Creset' --abbrev-commit --date=relative
 	mm = !git fetch origin master && git merge origin/master
 	pb = "!f() { git push --set-upstream origin `git rev-parse --abbrev-ref HEAD`; }; f"
-	prm = "!f() { hub pull-request -m \"$1\n$HUB_PR_BODY_TEMPLATE\" | xargs open; }; f"
+	pf = push --force
+	prm = "!f() { local PR_TEMPLATE=$(cat "`git rev-parse --show-toplevel`/.github/PULL_REQUEST_TEMPLATE.md"); hub pull-request -m \"$1\n$PR_TEMPLATE\" | xargs open; }; f"
 	rbc = rebase --continue
 	rbm = !git fetch origin master && git rebase -i origin/master
 	st = status -sb
@@ -27,3 +52,16 @@
 	tagd = "!f() { git tag -d \"$1\"; git push origin \":refs/tags/$1\"; }; f"
 	tagsync = "!f() { git tag -l | xargs git tag -d; git fetch; }; f"
 	trim = "!f() { git fetch && git remote prune origin; git branch --merged | grep -v \"^\\*\\|master$\" | xargs -n 1 git branch -d; }; f"
+
+# Here's how you can delete all tags matching aq
+#
+# g tag -l | grep 'aq' | xargs -I % sh -c 'git tag -d "%"; git push origin ":refs/tags/%";'
+#
+
+[merge]
+	tool = kdiff3
+[diff "daff-csv"]
+	command = daff diff --color --git
+[merge "daff-csv"]
+	name = daff tabular csv merge
+	driver = daff merge --output %A %O %A %B

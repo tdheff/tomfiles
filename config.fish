@@ -1,27 +1,21 @@
-set -g WAHOO_PATH $HOME/.wahoo
-set -g WAHOO_CUSTOM $HOME/.dotfiles
-source $WAHOO_PATH/init.fish
-bash ~/.shell_colors.sh
+# alias autojump
+alias j z
 
-# autojump
-. /usr/share/autojump/autojump.fish
+# configure nvm
+nvm use --silent 5
 
-# handy stuff
-alias m43 "cd ~/dev/mark43"
-alias initm43 "bash ~/mark43devinit.sh"
+# set colors correctly
+set fish_color_command yellow
+set fish_color_normal white
+set fish_color_param blue
+set fish_color_error red
+set fish_color_autosuggestion brgrey
 
-abbr -a ga git add
-abbr -a gs git status
-abbr -a gc git commit
-abbr -a gp git push
-abbr -a gco git checkout
+# welcome message
+function fish_greeting
+end
 
-# make node work
-bass source ~/.nvm/nvm.sh ';' nvm use stable
-
-. ~/.gitprompt/gitprompt.fish
-
-# add some stuff to path
-set PATH ~/src/apache-maven-3.3.3/bin/ $PATH
-set PATH ~/bin $PATH
-set PATH /usr/local/go/bin $PATH
+# atlast
+set -g -x ATLAS_TOKEN 'rq2vm7jaFlr0Sw.atlasv1.nYkHz5kWD2eW54UhghaexEOSWzghVICySku0ScanTWBeMTPzVgT6FZyKTZj8Bv8GjpM'
+set -g -x ARTIFACTORY_PASSWORD '$ZdC%9pIY5yyBO!EloNpjRmtc@Oy'
+set -g -x ARTIFACTORY_USERNAME 'developer'

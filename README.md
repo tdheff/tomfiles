@@ -1,4 +1,4 @@
-tommyvim
+tomfiles
 ========
 
-Tommy's vim stuff
+Tommy's configs + shit 

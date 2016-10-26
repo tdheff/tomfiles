@@ -14,6 +14,7 @@ set laststatus=2
 set tabstop=4
 set shiftwidth=4
 set expandtab
+set noswapfile
 
 call plug#begin('~/.vim/plugged')
 
@@ -31,6 +32,10 @@ Plug 'mxw/vim-jsx'
 
 " elm
 Plug 'ElmCast/elm-vim'
+
+" elixir
+Plug 'elixir-lang/vim-elixir'
+Plug 'slashmili/alchemist.vim'
 
 call plug#end()
 
@@ -58,6 +63,14 @@ source /home/tommy/.vimd/syntastic.vim
 source /home/tommy/.vimd/langs/javascript.vim
 " elm
 source /home/tommy/.vimd/langs/elm.vim
+
+""""""""""""""""""""
+" some nice things "
+""""""""""""""""""""
+
+" buffer navigation
+nmap <c-j> :bnext<Enter>
+nmap <c-k> :bprevious<Enter>
 
 """"""""""""""""
 " reload vimrc "

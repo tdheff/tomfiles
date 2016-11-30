@@ -36,4 +36,15 @@ command! -nargs=* Ag call fzf#run({
 \ 'down':    '50%'
 \ })
 
+command! -nargs=* AgExact call fzf#run({
+\ 'source':  printf('ag --nogroup --column --color "%s"',
+\                   escape(empty(<q-args>) ? '^(?=.)' : <q-args>, '"\')),
+\ 'sink*':    function('<sid>ag_handler'),
+\ 'options': '--ansi --exact --expect=ctrl-t,ctrl-v,ctrl-x --delimiter : --nth 4.. '.
+\            '--multi --bind=ctrl-a:select-all,ctrl-d:deselect-all '.
+\            '--color hl:68,hl+:110',
+\ 'down':    '50%'
+\ })
+
 map <leader><c-p> :Ag<Enter>
+map <leader><leader><c-p> :AgExact<Enter>

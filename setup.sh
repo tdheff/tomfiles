@@ -28,7 +28,7 @@ fi
 
 
 # fish install with prompt
-read -p "Install fish and wahoo? [y/N]? " -n 1 -r
+read -p "Install fish and fisherman? [y/N]? " -n 1 -r
 if [[ $REPLY =~ ^[Yy]$ ]]
 then
   echo "Installing fish..."

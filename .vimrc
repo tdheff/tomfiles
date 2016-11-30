@@ -21,10 +21,12 @@ call plug#begin('~/.vim/plugged')
 " basics
 Plug 'easymotion/vim-easymotion'
 Plug 'morhetz/gruvbox'
+Plug 'trevordmiller/nova-vim'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'scrooloose/syntastic'
+Plug 'editorconfig/editorconfig-vim'
 
 " javascript
 Plug 'pangloss/vim-javascript'

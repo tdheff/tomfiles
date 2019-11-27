@@ -54,12 +54,10 @@
 	tagd = "!f() { git tag -d \"$1\"; git push origin \":refs/tags/$1\"; }; f"
 	tagsync = "!f() { git tag -l | xargs git tag -d; git fetch; }; f"
 	trim = "!f() { git fetch && git remote prune origin; git branch --merged | grep -v \"^\\*\\|master$\" | xargs -n 1 git branch -d; }; f"
-
 # Here's how you can delete all tags matching aq
 #
 # g tag -l | grep 'aq' | xargs -I % sh -c 'git tag -d "%"; git push origin ":refs/tags/%";'
 #
-
 [merge]
 	tool = kdiff3
 [diff "daff-csv"]

@@ -1,0 +1,16 @@
+[2022-06-16 16:20:40.555] [exthost] [info] Extension host with pid 75816 started
+[2022-06-16 16:20:40.555] [exthost] [info] Skipping acquiring lock for /home/tommy/.config/Code - OSS/User/workspaceStorage/3d84bedc16b3d9fe0c340158335a9ae0.
+[2022-06-16 16:20:40.598] [exthost] [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch, startup: true, activationEvent: '*'
+[2022-06-16 16:20:40.600] [exthost] [info] ExtensionService#_doActivateExtension vscode.git-base, startup: true, activationEvent: '*', root cause: vscode.git
+[2022-06-16 16:20:40.602] [exthost] [info] ExtensionService#_doActivateExtension vscode.ipynb, startup: true, activationEvent: '*'
+[2022-06-16 16:20:40.612] [exthost] [info] ExtensionService#_doActivateExtension vscode.git, startup: true, activationEvent: '*'
+[2022-06-16 16:20:40.634] [exthost] [info] ExtensionService#_doActivateExtension vscode.github, startup: true, activationEvent: '*'
+[2022-06-16 16:20:40.669] [exthost] [info] Eager extensions activated
+[2022-06-16 16:20:40.683] [exthost] [info] ExtensionService#_doActivateExtension vscode.emmet, startup: false, activationEvent: 'onStartupFinished'
+[2022-06-16 16:20:40.689] [exthost] [info] ExtensionService#_doActivateExtension vscode.merge-conflict, startup: false, activationEvent: 'onStartupFinished'
+[2022-06-16 16:20:50.918] [exthost] [info] ExtensionService#_doActivateExtension vscode.debug-server-ready, startup: false, activationEvent: 'onDebugResolve'
+[2022-06-16 16:21:48.000] [exthost] [info] ExtensionService#_doActivateExtension vscode.configuration-editing, startup: false, activationEvent: 'onLanguage:jsonc'
+[2022-06-16 16:21:48.002] [exthost] [info] ExtensionService#_doActivateExtension vscode.json-language-features, startup: false, activationEvent: 'onLanguage:jsonc'
+[2022-06-16 16:21:48.015] [exthost] [info] ExtensionService#_doActivateExtension vscode.typescript-language-features, startup: false, activationEvent: 'onLanguage:jsonc'
+[2022-06-16 16:22:19.222] [exthost] [info] ExtensionService#_doActivateExtension elixir-lsp.elixir-ls, startup: false, activationEvent: 'onLanguage:elixir'
+[2022-06-16 19:35:47.900] [exthost] [info] ExtensionService#_doActivateExtension vscode.css-language-features, startup: false, activationEvent: 'onLanguage:css'

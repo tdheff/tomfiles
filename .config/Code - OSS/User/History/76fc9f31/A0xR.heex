@@ -1,0 +1,115 @@
+<%= if @live_action in [:new, :edit] do %>
+  <.modal return_to={Routes.league_index_path(@socket, :index)}>
+    <.live_component
+      module={GwordleWeb.LeagueLive.FormComponent}
+      id={@league.id || :new}
+      title={@page_title}
+      action={@live_action}
+      league={@league}
+      current_user={@current_user}
+      return_to={Routes.league_index_path(@socket, :index)}
+    />
+  </.modal>
+<% end %>
+
+<div class="grid grid-cols-1 md:grid-cols-2">
+  <div class="bg-surface drop-shadow sm:rounded-lg p-4">
+    <%= if !!@submission do %>
+        <div class="flex justify-between">
+          <button phx-click="previous_wordle">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M11 15l-3-3m0 0l3-3m-3 3h8M3 12a9 9 0 1118 0 9 9 0 01-18 0z" />
+            </svg>
+          </button>
+          
+          <div class="flex">
+            <h2 class="text-2xl">Wordle <%= @submission.wordle_day %>:&nbsp;</h2>
+            <h2 class="text-2xl font-bold">
+              <%= if @submission.score == 3 do %>
+                <span class="text-text"><%= @submission.score %></span>/6
+              <% end %>
+              <%= if @submission.score < 3 do %>
+                <span class="text-pine"><%= @submission.score %></span>/6
+              <% end %>
+              <%= if @submission.score > 3 do %>
+                <span class="text-love"><%= @submission.score %></span>/6
+              <% end %>
+            </h2>
+          </div>
+
+          <button phx-click="next_wordle">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M13 9l3 3m0 0l-3 3m3-3H8m13 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+          </button>
+        </div>
+
+        <br>
+
+        <div class="flex flex-col">
+          <%= for row <- @rows do %>
+            <div class="flex flex-row mb-1">
+              <%= for guess <- row do %>
+                <%= if guess == -1 do %>
+                  <span class="h-12 w-12 mr-1 rounded bg-base border-2 border-muted"></span>
+                <% end %>
+                <%= if guess == 0 do %>
+                  <span class="h-12 w-12 mr-1 rounded bg-highlight-high border-2 border-muted"></span>
+                <% end %>
+                <%= if guess == 1 do %>
+                  <span class="h-12 w-12 mr-1 rounded bg-gold"></span>
+                <% end %>
+                <%= if guess == 2 do %>
+                  <span class="h-12 w-12 mr-1 rounded bg-pine"></span>
+                <% end %>
+              <% end %>
+            </div>
+          <% end %>
+        </div>
+    <% else %>
+      <div class="flex">
+          <h2 class="text-2xl">Wordle <%= @wordle_day %>:&nbsp;</h2>
+          <h2 class="text-2xl font-bold">
+            ?/6
+          </h2>
+        </div>
+
+        <br>
+
+        <div class="flex flex-col">
+          <.form let={f} for={:data} phx-submit="create_submission">
+            <%= textarea f, :raw_submission %>
+            <%= submit "Submit" %>
+          </.form>
+        </div>
+    <% end %>
+  </div>
+
+</div>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Is active</th>
+
+      <th></th>
+    </tr>
+  </thead>
+  <tbody id="leagues">
+    <%= for league <- @leagues do %>
+      <tr id={"league-#{league.id}"}>
+        <td><%= league.name %></td>
+        <td><%= league.is_active %></td>
+
+        <td>
+          <span><%= live_redirect "Show", to: Routes.league_show_path(@socket, :show, league) %></span>
+          <span><%= live_patch "Edit", to: Routes.league_index_path(@socket, :edit, league) %></span>
+          <span><%= link "Delete", to: "#", phx_click: "delete", phx_value_id: league.id, data: [confirm: "Are you sure?"] %></span>
+        </td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<span><%= live_patch "New League", to: Routes.league_index_path(@socket, :new) %></span>

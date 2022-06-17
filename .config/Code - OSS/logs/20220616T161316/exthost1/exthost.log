@@ -1,0 +1,27 @@
+[2022-06-16 16:13:18.494] [exthost] [info] Extension host with pid 65262 started
+[2022-06-16 16:13:18.519] [exthost] [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch, startup: true, activationEvent: '*'
+[2022-06-16 16:13:18.520] [exthost] [info] ExtensionService#_doActivateExtension vscode.git-base, startup: true, activationEvent: '*', root cause: vscode.git
+[2022-06-16 16:13:18.521] [exthost] [info] ExtensionService#_doActivateExtension vscode.ipynb, startup: true, activationEvent: '*'
+[2022-06-16 16:13:18.529] [exthost] [info] ExtensionService#_doActivateExtension vscode.git, startup: true, activationEvent: '*'
+[2022-06-16 16:13:18.543] [exthost] [info] ExtensionService#_doActivateExtension vscode.github, startup: true, activationEvent: '*'
+[2022-06-16 16:13:18.559] [exthost] [info] Eager extensions activated
+[2022-06-16 16:13:18.567] [exthost] [info] ExtensionService#_doActivateExtension vscode.emmet, startup: false, activationEvent: 'onStartupFinished'
+[2022-06-16 16:13:18.570] [exthost] [info] ExtensionService#_doActivateExtension vscode.merge-conflict, startup: false, activationEvent: 'onStartupFinished'
+[2022-06-16 16:13:36.766] [exthost] [info] Extension host terminating: received terminate message from renderer
+[2022-06-16 16:13:36.771] [exthost] [info] Extension host with pid 65262 exiting with code 0
+[2022-06-16 16:13:38.228] [exthost] [info] Extension host with pid 65363 started
+[2022-06-16 16:13:38.228] [exthost] [info] Skipping acquiring lock for /home/tommy/.config/Code - OSS/User/workspaceStorage/3d84bedc16b3d9fe0c340158335a9ae0.
+[2022-06-16 16:13:38.299] [exthost] [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch, startup: true, activationEvent: '*'
+[2022-06-16 16:13:38.301] [exthost] [info] ExtensionService#_doActivateExtension vscode.git-base, startup: true, activationEvent: '*'
+[2022-06-16 16:13:38.302] [exthost] [info] ExtensionService#_doActivateExtension vscode.ipynb, startup: true, activationEvent: '*'
+[2022-06-16 16:13:38.309] [exthost] [info] ExtensionService#_doActivateExtension vscode.github, startup: true, activationEvent: '*'
+[2022-06-16 16:13:38.314] [exthost] [info] Eager extensions activated
+[2022-06-16 16:13:38.316] [exthost] [info] ExtensionService#_doActivateExtension vscode.emmet, startup: false, activationEvent: 'onStartupFinished'
+[2022-06-16 16:13:38.320] [exthost] [info] ExtensionService#_doActivateExtension vscode.merge-conflict, startup: false, activationEvent: 'onStartupFinished'
+[2022-06-16 16:13:39.067] [exthost] [info] ExtensionService#_doActivateExtension vscode.git, startup: false, activationEvent: 'api', root cause: vscode.github
+[2022-06-16 16:13:43.283] [exthost] [info] ExtensionService#_doActivateExtension vscode.configuration-editing, startup: false, activationEvent: 'onLanguage:jsonc'
+[2022-06-16 16:13:43.284] [exthost] [info] ExtensionService#_doActivateExtension vscode.json-language-features, startup: false, activationEvent: 'onLanguage:jsonc'
+[2022-06-16 16:13:43.299] [exthost] [info] ExtensionService#_doActivateExtension vscode.typescript-language-features, startup: false, activationEvent: 'onLanguage:jsonc'
+[2022-06-16 16:13:54.090] [exthost] [info] ExtensionService#_doActivateExtension elixir-lsp.elixir-ls, startup: false, activationEvent: 'onLanguage:elixir'
+[2022-06-16 16:14:56.944] [exthost] [info] Extension host terminating: received terminate message from renderer
+[2022-06-16 16:14:56.958] [exthost] [info] Extension host with pid 65363 exiting with code 0

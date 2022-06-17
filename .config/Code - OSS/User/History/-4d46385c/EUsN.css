@@ -1,0 +1,89 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+:root {
+  --base: #faf4ed;
+  --surface: #fffaf3;
+  --overlay: #f2e9e1;
+  --muted: #9893a5;
+  --subtle: #797593;
+  --text: #575279;
+
+  --love: #b4637a;
+  --love-low: rgba(180, 99, 122, 0.1);
+  --love-med: rgba(180, 99, 122, 0.15);
+
+  --gold: #ea9d34;
+  --gold-low: rgba(234, 157, 52, 0.1);
+  --gold-med: rgba(234, 157, 52, 0.15);
+
+  --rose: #d7827e;
+  --rose-low: rgba(215, 130, 126, 0.1);
+  --rose-med: rgba(215, 130, 126, 0.15);
+
+  --pine: #286983;
+  --pine-low: rgba(40, 105, 131, 0.1);
+  --pine-med: rgba(40, 105, 131, 0.2);
+
+  --foam: #56949f;
+  --foam-low: rgba(86, 148, 159, 0.1);
+  --foam-med: rgba(86, 148, 159, 0.15);
+
+  --iris: #907aa9;
+  --iris-low: rgba(144, 122, 169, 0.1);
+  --iris-med: rgba(144, 122, 169, 0.15);
+
+  --highlight-low: rgba(110, 106, 134, 0.05);
+  --highlight-low-blend: rgb(244, 237, 232);
+
+  --highlight-med: rgba(110, 106, 134, 0.08);
+  --highlight-med-blend: rgb(223, 218, 217);
+
+  --highlight-high: rgba(110, 106, 134, 0.15);
+  --highlight-high-blend: rgb(206, 202, 205);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --base: #191724;
+    --surface: #1f1d2e;
+    --overlay: #26233a;
+    --muted: #6e6a86;
+    --subtle: #908caa;
+    --text: #e0def4;
+
+    --love: #eb6f92;
+    --love-low: rgba(235, 111, 146, 0.1);
+    --love-med: rgba(235, 111, 146, 0.15);
+
+    --gold: #f6c177;
+    --gold-low: rgba(246, 193, 119, 0.1);
+    --gold-med: rgba(246, 193, 119, 0.15);
+
+    --rose: #ebbcba;
+    --rose-low: rgba(235, 188, 186, 0.1);
+    --rose-med: rgba(235, 188, 186, 0.15);
+
+    --pine: #31748f;
+    --pine-low: rgba(49, 116, 143, 0.1);
+    --pine-med: rgba(49, 116, 143, 0.15);
+
+    --foam: #9ccfd8;
+    --foam-low: rgba(156, 207, 216, 0.1);
+    --foam-med: rgba(156, 207, 216, 0.15);
+
+    --iris: #c4a7e7;
+    --iris-low: rgba(196, 167, 231, 0.1);
+    --iris-med: rgba(196, 167, 231, 0.15);
+
+    --highlight-low: rgba(110, 106, 134, 0.1);
+    --highlight-low-blend: rgb(33, 32, 46);
+
+    --highlight-med: rgba(110, 106, 134, 0.2);
+    --highlight-med-blend: rgb(64, 61, 82);
+
+    --highlight-high: rgba(110, 106, 134, 0.4);
+    --highlight-high-blend: rgb(82, 79, 103);
+  }
+}

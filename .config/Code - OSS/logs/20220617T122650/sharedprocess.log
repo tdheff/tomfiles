@@ -1,0 +1,8 @@
+[2022-06-17 12:26:52.901] [sharedprocess] [info] Starting worker process with pid 36467 (type: fileWatcher, window: 1).
+[2022-06-17 12:27:20.051] [sharedprocess] [info] Getting Manifest... sainnhe.everforest
+[2022-06-17 12:27:20.307] [sharedprocess] [info] Installing extension: sainnhe.everforest
+[2022-06-17 12:27:21.529] [sharedprocess] [info] Downloaded extension: sainnhe.everforest /home/tommy/.config/Code - OSS/CachedExtensionVSIXs/sainnhe.everforest-0.2.0
+[2022-06-17 12:27:21.585] [sharedprocess] [info] Extracted extension to /home/tommy/.vscode-oss/extensions/.bb7453ab-39b8-4d07-bc4f-2c470001ac74: sainnhe.everforest
+[2022-06-17 12:27:21.588] [sharedprocess] [info] Renamed to /home/tommy/.vscode-oss/extensions/sainnhe.everforest-0.2.0
+[2022-06-17 12:27:21.590] [sharedprocess] [info] Extracting completed. sainnhe.everforest
+[2022-06-17 12:27:21.591] [sharedprocess] [info] Extension installed successfully: sainnhe.everforest

@@ -1,0 +1,8 @@
+[2022-06-16 16:16:33.817] [main] [info] update#ctor - updates are disabled as there is no update URL
+[2022-06-16 16:16:34.975] [main] [info] Starting extension host with pid 70514 (fork() took 7 ms).
+[2022-06-16 16:16:43.726] [main] [info] Starting extension host with pid 71389 (fork() took 9 ms).
+[2022-06-16 16:16:43.814] [main] [info] Extension host with pid 70514 exited with code: 0, signal: null.
+[2022-06-16 16:16:48.941] [main] [info] Extension host with pid 71389 exited with code: 0, signal: null.
+[2022-06-16 16:16:49.528] [main] [info] Starting extension host with pid 71487 (fork() took 6 ms).
+[2022-06-16 16:18:05.778] [main] [info] Waiting for extension host with pid 71487 to exit.
+[2022-06-16 16:18:05.795] [main] [info] Extension host with pid 71487 exited with code: 0, signal: null.

@@ -1,0 +1,17 @@
+[2022-06-17 12:26:52.795] [exthost] [info] Extension host with pid 36363 started
+[2022-06-17 12:26:52.795] [exthost] [info] Skipping acquiring lock for /home/tommy/.config/Code - OSS/User/workspaceStorage/3d84bedc16b3d9fe0c340158335a9ae0.
+[2022-06-17 12:26:52.931] [exthost] [info] ExtensionService#_doActivateExtension elixir-lsp.elixir-ls, startup: false, activationEvent: 'onLanguage:phoenix-heex'
+[2022-06-17 12:26:52.996] [exthost] [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch, startup: true, activationEvent: '*'
+[2022-06-17 12:26:52.998] [exthost] [info] ExtensionService#_doActivateExtension vscode.git-base, startup: true, activationEvent: '*', root cause: vscode.git
+[2022-06-17 12:26:53.001] [exthost] [info] ExtensionService#_doActivateExtension vscode.ipynb, startup: true, activationEvent: '*'
+[2022-06-17 12:26:53.853] [exthost] [info] ExtensionService#_doActivateExtension vscode.git, startup: true, activationEvent: '*'
+[2022-06-17 12:26:53.874] [exthost] [info] ExtensionService#_doActivateExtension vscode.github, startup: true, activationEvent: '*'
+[2022-06-17 12:26:53.910] [exthost] [info] Eager extensions activated
+[2022-06-17 12:26:53.939] [exthost] [info] ExtensionService#_doActivateExtension vscode.emmet, startup: false, activationEvent: 'onStartupFinished'
+[2022-06-17 12:26:53.947] [exthost] [info] ExtensionService#_doActivateExtension vscode.merge-conflict, startup: false, activationEvent: 'onStartupFinished'
+[2022-06-17 12:27:21.707] [exthost] [info] ExtensionService#_doActivateExtension sainnhe.everforest, startup: false, activationEvent: '*'
+[2022-06-17 12:27:23.365] [exthost] [info] ExtensionService#_doActivateExtension vscode.configuration-editing, startup: false, activationEvent: 'onLanguage:jsonc'
+[2022-06-17 12:27:23.369] [exthost] [info] ExtensionService#_doActivateExtension vscode.json-language-features, startup: false, activationEvent: 'onLanguage:jsonc'
+[2022-06-17 12:27:23.385] [exthost] [info] ExtensionService#_doActivateExtension vscode.typescript-language-features, startup: false, activationEvent: 'onLanguage:jsonc'
+[2022-06-17 12:46:33.579] [exthost] [info] Extension host terminating: received terminate message from renderer
+[2022-06-17 12:46:33.593] [exthost] [info] Extension host with pid 36363 exiting with code 0

@@ -1,0 +1,4 @@
+[2022-06-16 16:15:01.076] [main] [info] update#ctor - updates are disabled as there is no update URL
+[2022-06-16 16:15:02.175] [main] [info] Starting extension host with pid 67834 (fork() took 8 ms).
+[2022-06-16 16:15:10.075] [main] [info] Waiting for extension host with pid 67834 to exit.
+[2022-06-16 16:15:10.090] [main] [info] Extension host with pid 67834 exited with code: 0, signal: null.

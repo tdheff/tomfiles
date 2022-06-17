@@ -1,0 +1,114 @@
+$base: #faf4ed;
+$base-rgb: rgb(250, 244, 237);
+$base-hsl: hsl(32, 57%, 95%);
+$surface: #fffaf3;
+$surface-rgb: rgb(255, 250, 243);
+$surface-hsl: hsl(35, 100%, 98%);
+$overlay: #f2e9e1;
+$overlay-rgb: rgb(242, 233, 222);
+$overlay-hsl: hsl(33, 43%, 91%);
+$muted: #9893a5;
+$muted-rgb: rgb(152, 147, 165);
+$muted-hsl: hsl(257, 9%, 61%);
+$subtle: #797593;
+$subtle-rgb: rgb(121, 117, 147);
+$subtle-hsl: hsl(248, 12%, 52%);
+$text: #575279;
+$text-rgb: rgb(87, 82, 121);
+$text-hsl: hsl(248, 19%, 40%);
+$love: #b4637a;
+$love-rgb: rgb(180, 99, 122);
+$love-hsl: hsl(343, 35%, 55%);
+$gold: #ea9d34;
+$gold-rgb: rgb(234, 157, 52);
+$gold-hsl: hsl(35, 81%, 56%);
+$rose: #d7827e;
+$rose-rgb: rgb(215, 130, 126);
+$rose-hsl: hsl(3, 53%, 67%);
+$pine: #286983;
+$pine-rgb: rgb(40, 105, 131);
+$pine-hsl: hsl(197, 53%, 34%);
+$foam: #56949f;
+$foam-rgb: rgb(86, 148, 159);
+$foam-hsl: hsl(189, 30%, 48%);
+$iris: #907aa9;
+$iris-rgb: rgb(144, 122, 169);
+$iris-hsl: hsl(268, 21%, 57%);
+$highlight-low: #f4ede8;
+$highlight-low-rgb: rgb(244, 237, 232);
+$highlight-low-hsl: hsl(25, 35%, 93%);
+$highlight-low-alpha: #6e6a860d;
+$highlight-low-alpha-rgb: rgba(110, 106, 134, 0.05);
+$highlight-low-alpha-hsl: hsla(249, 12%, 47%, 0.05);
+$highlight-med: #dfdad9;
+$highlight-med-rgb: rgb(223, 218, 217);
+$highlight-med-hsl: hsl(10, 9%, 86%);
+$highlight-med-alpha: #6e6a8614;
+$highlight-med-alpha-rgb: rgba(110, 106, 134, 0.08);
+$highlight-med-alpha-hsl: hsla(249, 12%, 47%, 0.08);
+$highlight-high: #cecacd;
+$highlight-high-rgb: rgb(206, 202, 205);
+$highlight-high-hsl: hsl(315, 4%, 80%);
+$highlight-high-alpha: #6e6a8626;
+$highlight-high-alpha-rgb: rgba(110, 106, 134, 0.15);
+$highlight-high-alpha-hsl: hsla(249, 12%, 47%, 0.15);
+
+* {
+    all: unset; //Unsets everything so you can style everything from scratch
+  }
+  
+  //Global Styles
+  .bar {
+    background-color: $base;
+    color: $text;
+    padding: 10px;
+  }
+  
+  // Styles on classes (see eww.yuck for more information)
+  
+  .sidestuff slider {
+    all: unset;
+    color: $rose;
+  }
+  
+  .metric scale trough highlight {
+    all: unset;
+    background-color: $love;
+    color: #000000;
+    border-radius: 10px;
+  }
+  .metric scale trough {
+    all: unset;
+    background-color: $gold;
+    border-radius: 50px;
+    min-height: 3px;
+    min-width: 50px;
+    margin-left: 10px;
+    margin-right: 20px;
+  }
+  .metric scale trough highlight {
+    all: unset;
+    background-color: #D35D6E;
+    color: #000000;
+    border-radius: 10px;
+  }
+  .metric scale trough {
+    all: unset;
+    background-color: #4e4e4e;
+    border-radius: 50px;
+    min-height: 3px;
+    min-width: 50px;
+    margin-left: 10px;
+    margin-right: 20px;
+  }
+  .label-ram {
+    font-size: large;
+  }
+  .workspaces button:hover {
+    background: $rose;
+    color: $base;
+  }
+
+  .button {
+    padding: 4px;
+  }

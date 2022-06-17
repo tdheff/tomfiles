@@ -1,0 +1,48 @@
+#!/usr/bin/env bash
+
+# Config directry variable
+CONFIG_DIR="$HOME/.config/worm"
+
+configError() {
+  dunstify -u critical "worm config error" "$2" &
+}
+
+### -- Boot Startup apps
+picom --config "$CONFIG_DIR/picom.conf" &
+sxhkd -c "$CONFIG_DIR/sxhkdrc" &
+dunst &
+
+### -- Wallpaper
+nitrogen --restore &
+
+### -- Polybar
+#if [ -x "$(command -v polybar)" ]; then
+#  polybar -c "$CONFIG_DIR/polybar.ini" tray &
+#  polybar -c "$CONFIG_DIR/polybar.ini" ws &
+#else
+#  configError "polybar is not installed!"
+#fi
+polybar -c "$CONFIG_DIR/polybar.ini" &
+
+### -- xss-lock
+xss-lock -- betterlockscreen -l &
+
+### -- Worm Config
+wormc layout tiling
+wormc border-width 0
+wormc struts 50 15 15 15
+wormc gaps 15
+wormc text-font 'JetBrains Mono Nerd Font:antialias=true'
+
+# Colouring
+wormc text-active-pixel $((16#ff575279))
+wormc text-inactive-pixel $((16#ff575279)) 
+wormc frame-active-pixel $((16#fffaf4ed)) 
+wormc frame-inactive-pixel $((16#ffdfdad9))
+
+# Titlebar Decoration
+wormc frame-left 'T;' # Place Window Title on the left side
+wormc frame-right 'C;' # Place Close Button on the right side
+wormc button-offset 12 8
+
+xrandr --output DP-0 --mode 3440x1440 --rate 180.00

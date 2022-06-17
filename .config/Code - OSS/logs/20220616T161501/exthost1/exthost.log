@@ -1,0 +1,13 @@
+[2022-06-16 16:15:02.518] [exthost] [info] Extension host with pid 67834 started
+[2022-06-16 16:15:02.518] [exthost] [info] Skipping acquiring lock for /home/tommy/.config/Code - OSS/User/workspaceStorage/3d84bedc16b3d9fe0c340158335a9ae0.
+[2022-06-16 16:15:02.552] [exthost] [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch, startup: true, activationEvent: '*'
+[2022-06-16 16:15:02.554] [exthost] [info] ExtensionService#_doActivateExtension vscode.git-base, startup: true, activationEvent: '*', root cause: vscode.git
+[2022-06-16 16:15:02.556] [exthost] [info] ExtensionService#_doActivateExtension vscode.ipynb, startup: true, activationEvent: '*'
+[2022-06-16 16:15:02.564] [exthost] [info] ExtensionService#_doActivateExtension vscode.git, startup: true, activationEvent: '*'
+[2022-06-16 16:15:02.579] [exthost] [info] ExtensionService#_doActivateExtension vscode.github, startup: true, activationEvent: '*'
+[2022-06-16 16:15:02.603] [exthost] [info] Eager extensions activated
+[2022-06-16 16:15:02.630] [exthost] [info] ExtensionService#_doActivateExtension vscode.emmet, startup: false, activationEvent: 'onStartupFinished'
+[2022-06-16 16:15:02.635] [exthost] [info] ExtensionService#_doActivateExtension vscode.merge-conflict, startup: false, activationEvent: 'onStartupFinished'
+[2022-06-16 16:15:03.780] [exthost] [info] ExtensionService#_doActivateExtension elixir-lsp.elixir-ls, startup: false, activationEvent: 'onLanguage:elixir'
+[2022-06-16 16:15:10.069] [exthost] [info] Extension host terminating: received terminate message from renderer
+[2022-06-16 16:15:10.081] [exthost] [info] Extension host with pid 67834 exiting with code 0

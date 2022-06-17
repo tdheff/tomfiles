@@ -1,0 +1,6 @@
+[2022-06-16 16:15:04.068] [renderer1] [error] [Extension Host] No version is set for command elixir
+Consider adding one of the following versions in your config file at /home/tommy/.tool-versions
+elixir 1.13.4
+[2022-06-16 16:15:04.068] [renderer1] [error] [Extension Host] No version is set for command elixir
+Consider adding one of the following versions in your config file at /home/tommy/.tool-versions
+elixir 1.13.4

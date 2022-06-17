@@ -1,0 +1,14 @@
+[2022-06-17 13:10:24.820] [exthost] [info] Extension host with pid 75783 started
+[2022-06-17 13:10:24.820] [exthost] [info] Skipping acquiring lock for /home/tommy/.config/Code - OSS/User/workspaceStorage/2d8cbf0ff9f9569fb38037182295878a.
+[2022-06-17 13:10:24.859] [exthost] [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch, startup: true, activationEvent: '*'
+[2022-06-17 13:10:24.861] [exthost] [info] ExtensionService#_doActivateExtension vscode.git-base, startup: true, activationEvent: '*'
+[2022-06-17 13:10:24.862] [exthost] [info] ExtensionService#_doActivateExtension vscode.ipynb, startup: true, activationEvent: '*'
+[2022-06-17 13:10:24.864] [exthost] [info] ExtensionService#_doActivateExtension sainnhe.everforest, startup: true, activationEvent: '*'
+[2022-06-17 13:10:24.878] [exthost] [info] ExtensionService#_doActivateExtension vscode.github, startup: true, activationEvent: '*'
+[2022-06-17 13:10:24.885] [exthost] [info] Eager extensions activated
+[2022-06-17 13:10:24.888] [exthost] [info] ExtensionService#_doActivateExtension vscode.emmet, startup: false, activationEvent: 'onStartupFinished'
+[2022-06-17 13:10:24.891] [exthost] [info] ExtensionService#_doActivateExtension vscode.merge-conflict, startup: false, activationEvent: 'onStartupFinished'
+[2022-06-17 13:10:25.524] [exthost] [info] ExtensionService#_doActivateExtension vscode.git, startup: false, activationEvent: 'api', root cause: vscode.github
+[2022-06-17 13:12:58.623] [exthost] [info] ExtensionService#_doActivateExtension vscode.css-language-features, startup: false, activationEvent: 'onLanguage:scss'
+[2022-06-17 13:23:18.451] [exthost] [info] Extension host terminating: received terminate message from renderer
+[2022-06-17 13:23:18.462] [exthost] [info] Extension host with pid 75783 exiting with code 0

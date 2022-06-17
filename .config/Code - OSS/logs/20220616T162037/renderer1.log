@@ -1,0 +1,12 @@
+[2022-06-16 16:27:37.448] [renderer1] [error] [Extension Host] Error: Unexpected SIGPIPE
+	at process.<anonymous> (/usr/lib/code/out/bootstrap.js:1:407)
+	at process.emit (node:events:390:28)
+[2022-06-16 16:30:43.233] [renderer1] [error] [Extension Host] Error: Unexpected SIGPIPE
+	at process.<anonymous> (/usr/lib/code/out/bootstrap.js:1:407)
+	at process.emit (node:events:390:28)
+[2022-06-16 19:31:18.700] [renderer1] [error] Unable to read file '/home/tommy/Dev/gwordle/lib/gwordle/matches/matchday_submission.ex' (Error: File not modified since): Error: Unable to read file '/home/tommy/Dev/gwordle/lib/gwordle/matches/matchday_submission.ex' (Error: File not modified since)
+    at h.doReadFileStream (vscode-file://vscode-app/usr/lib/code/out/vs/workbench/workbench.desktop.main.js:597:20034)
+    at async p.doRead (vscode-file://vscode-app/usr/lib/code/out/vs/workbench/workbench.desktop.main.js:2760:42343)
+    at async p.readStream (vscode-file://vscode-app/usr/lib/code/out/vs/workbench/workbench.desktop.main.js:2760:42018)
+    at async wr.resolveFromFile (vscode-file://vscode-app/usr/lib/code/out/vs/workbench/workbench.desktop.main.js:2749:66850)
+    at async vscode-file://vscode-app/usr/lib/code/out/vs/workbench/workbench.desktop.main.js:2760:36475

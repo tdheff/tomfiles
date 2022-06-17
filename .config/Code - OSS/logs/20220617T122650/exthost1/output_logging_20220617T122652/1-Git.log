@@ -1,0 +1,24 @@
+[2022-06-17T19:26:53.892Z] Log level: Info
+[2022-06-17T19:26:53.893Z] [info] Validating found git in: git
+[2022-06-17T19:26:53.901Z] [info] Using git 2.36.1 from git
+[2022-06-17T19:26:53.911Z] > git rev-parse --show-toplevel [2ms]
+[2022-06-17T19:26:53.920Z] > git rev-parse --git-dir --git-common-dir [3ms]
+[2022-06-17T19:26:53.927Z] [info] Open repository: /home/tommy/Dev/gwordle
+[2022-06-17T19:26:53.950Z] > git status -z -uall [18ms]
+[2022-06-17T19:26:53.961Z] > git symbolic-ref --short HEAD [7ms]
+[2022-06-17T19:26:53.966Z] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [2ms]
+[2022-06-17T19:26:53.976Z] > git remote --verbose [3ms]
+[2022-06-17T19:26:53.976Z] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [6ms]
+[2022-06-17T19:26:53.982Z] > git config --get commit.template [1ms]
+[2022-06-17T19:26:54.255Z] > git show --textconv :lib/gwordle_web/live/home_live/index.html.heex [3ms]
+[2022-06-17T19:26:54.256Z] > git ls-files --stage -- /home/tommy/Dev/gwordle/lib/gwordle_web/live/home_live/index.html.heex [1ms]
+[2022-06-17T19:26:54.442Z] > git check-ignore -v -z --stdin [1ms]
+[2022-06-17T19:26:59.032Z] > git status -z -uall [2ms]
+[2022-06-17T19:26:59.036Z] > git symbolic-ref --short HEAD [1ms]
+[2022-06-17T19:26:59.039Z] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [1ms]
+[2022-06-17T19:26:59.045Z] > git remote --verbose [1ms]
+[2022-06-17T19:26:59.046Z] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [4ms]
+[2022-06-17T19:26:59.051Z] > git config --get commit.template [1ms]
+[2022-06-17T19:27:24.393Z] > git show --textconv :lib/gwordle/wordle_server.ex [17ms]
+[2022-06-17T19:27:24.398Z] > git ls-files --stage -- /home/tommy/Dev/gwordle/lib/gwordle/wordle_server.ex [10ms]
+[2022-06-17T19:27:24.627Z] > git check-ignore -v -z --stdin [4ms]

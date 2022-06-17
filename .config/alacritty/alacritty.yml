@@ -1,0 +1,84 @@
+################################################
+#  ██████╗██████╗ ██╗   ██╗██╗     ██╗ █████╗  #
+# ██╔════╝██╔══██╗╚██╗ ██╔╝██║     ██║██╔══██╗ #
+# ██║     ██████╔╝ ╚████╔╝ ██║     ██║███████║ #
+# ██║     ██╔══██╗  ╚██╔╝  ██║     ██║██╔══██║ #
+# ╚██████╗██║  ██║   ██║   ███████╗██║██║  ██║ #
+#  ╚═════╝╚═╝  ╚═╝   ╚═╝   ╚══════╝╚═╝╚═╝  ╚═╝ #
+################################################
+
+# Set the window Width and Height in console columns.
+# The window size will change if the font size changes.
+window:
+  padding:
+    x: 10
+    y: 10
+  dynamic_padding: true
+  dimensions:
+    columns: 120
+    lines: 30
+  decorations: full
+  startup_mode: Windowed
+  title: "Alacritty Terminal"
+  dynamic_title: true
+# Scrolling history and multiplier
+scrolling:
+  history: 10000
+  multiplier: 3
+# Font family and style
+font:
+  normal:
+    family: "JetBrains Mono Nerd Font"
+    style: Regular
+  bold:
+    family: "JetBrains Mono Nerd Font"
+    style: Bold
+  italic:
+    family: "JetBrains Mono Nerd Font"
+    style: italic
+  bold_italic:
+    family: "JetBrains Mono Nerd Font"
+    style: Bold Italic
+  size: 12.0
+  offset:
+    x: 0
+    y: 0
+  draw_bold_text_with_bright_colors: false
+# Terminal colors
+colors:
+  primary:
+    background: '#faf4ed'
+    foreground: '#575279'
+  cursor:
+    cursor: '#d7827e'
+  search:
+    matches:
+      foreground: '#000000'
+      background: '#EA80FC'
+    focus_match:
+      foreground: '#000000'
+      background: '#E040FB'
+    bar:
+      foreground: '#B388FF'
+      background: '#121212'
+  selection:
+    text: '#EA80FC'
+    background: '#121212'
+  normal:
+    black: '#575279'
+    red: '#b4637a'
+    green: '#56949f'
+    yellow: '#ea9d34'
+    blue: '#286983'
+    magenta: '#907aa9'
+    cyan: '#d7827e'
+    white: '#797593'
+  bright:
+    black: '#575279'
+    red: '#b4637a'
+    green: '#56949f'
+    yellow: '#ea9d34'
+    blue: '#286983'
+    magenta: '#907aa9'
+    cyan: '#d7827e'
+    white: '#797593'

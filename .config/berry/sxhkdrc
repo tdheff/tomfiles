@@ -1,0 +1,95 @@
+##### NON BERRY 
+
+##---------- multimedia keys ----------##
+
+# App Launcher
+super + space
+  rofi -no-lazy-grab -show drun -modi drun -theme $HOME/.config/rofi/theme/launcher.rasi
+
+# Powermenu
+super + ctrl + p
+  sh $HOME/.config/berry/scripts/powermenu.sh
+
+# Rofi config menu
+super + shift + c
+  sh $HOME/.config/berry/scripts/configs.sh
+
+# Reload sxhkdrc
+super + shift + r
+  pkill -USR1 -x sxhkd; notify-send 'sxhkd' 'Reloaded config'
+
+# Full Screenshot
+Print
+  sh $HOME/.config/berry/scripts/screenshot.sh full
+
+# Area Screenhot
+super + ctrl + s
+  sh $HOME/.config/berry/scripts/screenshot.sh area
+
+# Manage Volume
+XF86Audio{Raise,Lower}Volume
+  sh $HOME/.config/berry/scripts/volume.sh {up,down}
+
+XF86AudioMute
+  sh $HOME/.config/berry/scripts/volume.sh mute
+
+##### BERRY
+
+# Reload berryc
+super + ctrl + r
+	sh $HOME/.config/berry/configure_berry.sh
+
+# Quit berry 
+ctrl + super + q
+	berryc quit
+
+# Close app
+super + q
+	berryc window_close
+
+# Maximize app
+super + f
+  berryc fullscreen
+
+# Kill decorations
+super + n
+  berryc toggle_decorations
+
+# Workspaces
+super + {_, shift + } {1-9}
+
+berryc {switch,send-to}-workspace {1-9}
+# Next client
+super + Tab
+  berryc cycle_focus
+
+# rofi
+super + space
+  rofi -show run
+
+# terminal
+super + Return
+  rofi-sensible-terminal
+
+# snapping
+super + {Left,Right}
+  berryc snap_{left,right}
+
+# monocle
+super + m
+  berryc window_monocle
+
+# click
+~button1
+  berryc pointer_focus
+
+## MUSIC
+
+XF86AudioPrev
+  playerctl previous
+
+XF86AudioNext
+  playerctl next
+
+XF86AudioPlay
+  playerctl play-pause

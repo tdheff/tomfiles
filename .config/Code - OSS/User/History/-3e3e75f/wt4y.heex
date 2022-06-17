@@ -1,0 +1,42 @@
+<h1>Listing Leagues</h1>
+
+<%= if @live_action in [:new, :edit] do %>
+  <.modal return_to={Routes.league_index_path(@socket, :index)}>
+    <.live_component
+      module={GwordleWeb.LeagueLive.FormComponent}
+      id={@league.id || :new}
+      title={@page_title}
+      action={@live_action}
+      league={@league}
+      current_user={@current_user}
+      return_to={Routes.league_index_path(@socket, :index)}
+    />
+  </.modal>
+<% end %>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Is active</th>
+
+      <th></th>
+    </tr>
+  </thead>
+  <tbody id="leagues">
+    <%= for league <- @leagues do %>
+      <tr id={"league-#{league.id}"}>
+        <td><%= league.name %></td>
+        <td><%= league.is_active %></td>
+
+        <td>
+          <span><%= live_redirect "Show", to: Routes.league_show_path(@socket, :show, league) %></span>
+          <span><%= live_patch "Edit", to: Routes.league_index_path(@socket, :edit, league) %></span>
+          <span><%= link "Delete", to: "#", phx_click: "delete", phx_value_id: league.id, data: [confirm: "Are you sure?"] %></span>
+        </td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<span><%= live_patch "New League", to: Routes.league_index_path(@socket, :new) %></span>

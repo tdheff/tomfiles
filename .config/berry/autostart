@@ -1,0 +1,19 @@
+#!/bin/sh
+
+# Config dir
+CONFIG_DIR="$HOME/.config/berry/"
+
+# Boot programs
+exec nitrogen --restore &
+exec rotate-wallpaper &
+exec sxhkd -c "$CONFIG_DIR/sxhkdrc" &
+exec picom --config "$CONFIG_DIR/picom.conf" &
+# exec polybar -c "$CONFIG_DIR/polybar.ini" left &
+# exec polybar -c "$CONFIG_DIR/polybar.ini" center &
+# exec polybar -c "$CONFIG_DIR/polybar.ini" right &
+exec eww open bar &
+
+xrandr --output DP-0 --mode 3440x1440 --rate 180.00 &
+
+# Berry config
+bash $CONFIG_DIR/configure_berry.sh

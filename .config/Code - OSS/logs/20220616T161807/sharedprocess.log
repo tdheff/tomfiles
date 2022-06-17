@@ -1,0 +1,8 @@
+[2022-06-16 16:18:09.638] [sharedprocess] [info] Starting worker process with pid 73529 (type: fileWatcher, window: 1).
+[2022-06-16 16:19:45.493] [sharedprocess] [info] Getting Manifest... mvllow.rose-pine
+[2022-06-16 16:19:45.653] [sharedprocess] [info] Installing extension: mvllow.rose-pine
+[2022-06-16 16:19:46.692] [sharedprocess] [info] Downloaded extension: mvllow.rose-pine /home/tommy/.config/Code - OSS/CachedExtensionVSIXs/mvllow.rose-pine-2.2.1
+[2022-06-16 16:19:46.739] [sharedprocess] [info] Extracted extension to /home/tommy/.vscode-oss/extensions/.2381dea0-40e9-4792-8c25-27be2e164119: mvllow.rose-pine
+[2022-06-16 16:19:46.742] [sharedprocess] [info] Renamed to /home/tommy/.vscode-oss/extensions/mvllow.rose-pine-2.2.1
+[2022-06-16 16:19:46.742] [sharedprocess] [info] Extracting completed. mvllow.rose-pine
+[2022-06-16 16:19:46.743] [sharedprocess] [info] Extension installed successfully: mvllow.rose-pine

@@ -1,0 +1,21 @@
+[2022-06-17T19:46:39.067Z] Log level: Info
+[2022-06-17T19:46:39.067Z] [info] Validating found git in: git
+[2022-06-17T19:46:39.074Z] [info] Using git 2.36.1 from git
+[2022-06-17T19:46:39.085Z] > git rev-parse --show-toplevel [3ms]
+[2022-06-17T19:46:39.093Z] > git rev-parse --git-dir --git-common-dir [1ms]
+[2022-06-17T19:46:39.097Z] [info] Open repository: /home/tommy/Dev/gwordle
+[2022-06-17T19:46:39.112Z] > git status -z -uall [11ms]
+[2022-06-17T19:46:39.121Z] > git symbolic-ref --short HEAD [5ms]
+[2022-06-17T19:46:39.127Z] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [1ms]
+[2022-06-17T19:46:39.135Z] > git remote --verbose [2ms]
+[2022-06-17T19:46:39.136Z] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [6ms]
+[2022-06-17T19:46:39.143Z] > git config --get commit.template [1ms]
+[2022-06-17T19:46:39.425Z] > git show --textconv :lib/gwordle/wordle_server.ex [5ms]
+[2022-06-17T19:46:39.425Z] > git ls-files --stage -- /home/tommy/Dev/gwordle/lib/gwordle/wordle_server.ex [1ms]
+[2022-06-17T19:46:39.610Z] > git check-ignore -v -z --stdin [1ms]
+[2022-06-17T19:46:43.967Z] > git status -z -uall [2ms]
+[2022-06-17T19:46:43.972Z] > git symbolic-ref --short HEAD [1ms]
+[2022-06-17T19:46:43.976Z] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [1ms]
+[2022-06-17T19:46:43.984Z] > git remote --verbose [1ms]
+[2022-06-17T19:46:43.984Z] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [4ms]
+[2022-06-17T19:46:43.989Z] > git config --get commit.template [0ms]

@@ -1,0 +1,26 @@
+Started ElixirLS v0.8.2
+Elixir version: "1.13.4 (compiled with Erlang/OTP 23)"
+Erlang version: "25"
+ElixirLS compiled with Elixir 1.10.4 and erlang 22
+MIX_ENV: test
+MIX_TARGET: 
+[Info  - 4:15:05 PM] Compile took 843 milliseconds
+[Info  - 4:15:05 PM] [ElixirLS Dialyzer] Checking for stale beam files
+[Info  - 4:15:05 PM] [ElixirLS WorkspaceSymbols] Indexing...
+[Info  - 4:15:05 PM] [ElixirLS WorkspaceSymbols] Module discovery complete
+[Info  - 4:15:05 PM] [ElixirLS WorkspaceSymbols] 25 callbacks added to index
+[Info  - 4:15:05 PM] [ElixirLS WorkspaceSymbols] 200 modules added to index
+[Info  - 4:15:06 PM] [ElixirLS WorkspaceSymbols] 392 types added to index
+[Info  - 4:15:06 PM] [ElixirLS WorkspaceSymbols] 4346 functions added to index
+[Info  - 4:15:07 PM] [ElixirLS Dialyzer] Found 817 changed files in 1972 milliseconds
+MIX_ENV: test
+MIX_TARGET: 
+Generated gwordle app
+[Info  - 4:15:09 PM] Compile took 111 milliseconds
+[Info  - 4:15:09 PM] [ElixirLS Dialyzer] Checking for stale beam files
+[Info  - 4:15:09 PM] [ElixirLS WorkspaceSymbols] Updating index...
+[Info  - 4:15:09 PM] [ElixirLS WorkspaceSymbols] 1 modules need reindexing
+[Info  - 4:15:09 PM] [ElixirLS WorkspaceSymbols] 0 callbacks added to index
+[Info  - 4:15:09 PM] [ElixirLS WorkspaceSymbols] 0 types added to index
+[Info  - 4:15:09 PM] [ElixirLS WorkspaceSymbols] 1 modules added to index
+[Info  - 4:15:09 PM] [ElixirLS WorkspaceSymbols] 5 functions added to index

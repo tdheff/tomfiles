@@ -1,0 +1,8 @@
+[2022-06-16 16:20:40.666] [sharedprocess] [info] Starting worker process with pid 75857 (type: fileWatcher, window: 1).
+[2022-06-16 16:33:10.744] [sharedprocess] [info] Getting Manifest... victorbjorklund.phoenix
+[2022-06-16 16:33:10.905] [sharedprocess] [info] Installing extension: victorbjorklund.phoenix
+[2022-06-16 16:33:11.587] [sharedprocess] [info] Downloaded extension: victorbjorklund.phoenix /home/tommy/.config/Code - OSS/CachedExtensionVSIXs/victorbjorklund.phoenix-0.1.0
+[2022-06-16 16:33:11.637] [sharedprocess] [info] Extracted extension to /home/tommy/.vscode-oss/extensions/.3cbff99b-76dd-42fa-aa71-47bd1ff28afd: victorbjorklund.phoenix
+[2022-06-16 16:33:11.640] [sharedprocess] [info] Renamed to /home/tommy/.vscode-oss/extensions/victorbjorklund.phoenix-0.1.0
+[2022-06-16 16:33:11.640] [sharedprocess] [info] Extracting completed. victorbjorklund.phoenix
+[2022-06-16 16:33:11.641] [sharedprocess] [info] Extension installed successfully: victorbjorklund.phoenix

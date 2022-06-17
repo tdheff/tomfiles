@@ -1,0 +1,212 @@
+Started ElixirLS v0.8.2
+Elixir version: "1.13.4 (compiled with Erlang/OTP 23)"
+Erlang version: "25"
+ElixirLS compiled with Elixir 1.10.4 and erlang 22
+MIX_ENV: test
+MIX_TARGET: 
+==> connection
+Compiling 1 file (.ex)
+Generated connection app
+==> decimal
+Compiling 4 files (.ex)
+Generated decimal app
+==> html_entities
+Compiling 2 files (.ex)
+Generated html_entities app
+==> floki
+Compiling 1 file (.xrl)
+Compiling 2 files (.erl)
+Compiling 27 files (.ex)
+Generated floki app
+==> mime
+Compiling 1 file (.ex)
+Generated mime app
+==> nimble_options
+Compiling 3 files (.ex)
+Generated nimble_options app
+===> Analyzing applications...
+===> Compiling telemetry
+==> telemetry_metrics
+Compiling 7 files (.ex)
+Generated telemetry_metrics app
+===> Analyzing applications...
+===> Compiling telemetry_poller
+==> jason
+Compiling 10 files (.ex)
+Generated jason app
+==> comeonin
+Compiling 4 files (.ex)
+Generated comeonin app
+==> db_connection
+Compiling 14 files (.ex)
+Generated db_connection app
+==> phoenix_pubsub
+Compiling 11 files (.ex)
+Generated phoenix_pubsub app
+==> plug_crypto
+Compiling 5 files (.ex)
+Generated plug_crypto app
+==> hpax
+Compiling 4 files (.ex)
+Generated hpax app
+==> gettext
+Compiling 1 file (.erl)
+Compiling 21 files (.ex)
+Generated gettext app
+===> Analyzing applications...
+===> Compiling ranch
+==> ecto
+Compiling 56 files (.ex)
+Generated ecto app
+==> plug
+Compiling 1 file (.erl)
+Compiling 41 files (.ex)
+[Warn  - 4:14:11 PM] warning: System.stacktrace/0 is deprecated. Use __STACKTRACE__ instead
+  lib/plug/conn/wrapper_error.ex:26: Plug.Conn.WrapperError.reraise/3
+
+Generated plug app
+==> phoenix_html
+Compiling 8 files (.ex)
+Generated phoenix_html app
+==> phoenix_view
+Compiling 5 files (.ex)
+Generated phoenix_view app
+==> ecto_sql
+Compiling 26 files (.ex)
+Generated ecto_sql app
+==> nimble_pool
+Compiling 2 files (.ex)
+Generated nimble_pool app
+==> castore
+Compiling 1 file (.ex)
+Generated castore app
+==> esbuild
+Compiling 3 files (.ex)
+Generated esbuild app
+==> mint
+Compiling 1 file (.erl)
+Compiling 19 files (.ex)
+Generated mint app
+==> finch
+Compiling 13 files (.ex)
+Generated finch app
+==> elixir_make
+Compiling 1 file (.ex)
+Generated elixir_make app
+==> bcrypt_elixir
+mkdir -p /home/tommy/Dev/gwordle/.elixir_ls/build/_test/lib/bcrypt_elixir/priv
+cc -g -O3 -Wall -Wno-format-truncation -I"/home/tommy/.asdf/installs/erlang/25.0.1/erts-13.0.1/include" -Ic_src -fPIC -shared  c_src/bcrypt_nif.c c_src/blowfish.c -o /home/tommy/Dev/gwordle/.elixir_ls/build/_test/lib/bcrypt_elixir/priv/bcrypt_nif.so
+Compiling 3 files (.ex)
+Generated bcrypt_elixir app
+==> exqlite
+ CC sqlite3_nif.o
+ CC sqlite3.o
+ LD sqlite3_nif.so
+Compiling 10 files (.ex)
+Generated exqlite app
+==> ecto_sqlite3
+Compiling 4 files (.ex)
+[Warn  - 4:14:23 PM] warning: function query_many/4 required by behaviour Ecto.Adapters.SQL.Connection is not implemented (in module Ecto.Adapters.SQLite3.Connection)
+  lib/ecto/adapters/sqlite3/connection.ex:1: Ecto.Adapters.SQLite3.Connection (module)
+
+Generated ecto_sqlite3 app
+===> Analyzing applications...
+===> Compiling cowlib
+===> Analyzing applications...
+===> Compiling cowboy
+===> Analyzing applications...
+===> Compiling cowboy_telemetry
+==> plug_cowboy
+Compiling 5 files (.ex)
+Generated plug_cowboy app
+==> phoenix
+Compiling 69 files (.ex)
+Generated phoenix app
+==> phoenix_live_view
+Compiling 31 files (.ex)
+Generated phoenix_live_view app
+==> phoenix_live_dashboard
+Compiling 40 files (.ex)
+Generated phoenix_live_dashboard app
+==> swoosh
+Compiling 39 files (.ex)
+Generated swoosh app
+==> phoenix_ecto
+Compiling 7 files (.ex)
+Generated phoenix_ecto app
+==> gwordle
+Compiling 54 files (.ex)
+[Warn  - 4:14:39 PM] warning: unused alias Response
+  lib/gwordle/api_clients/wordle_api.ex:2
+
+[Warn  - 4:14:39 PM] warning: unused alias Competitions
+  lib/gwordle/matches.ex:9
+
+[Warn  - 4:14:40 PM] warning: GwordleWeb.Router.Helpers.matchweek_index_path/2 is undefined or private. Did you mean:
+
+      * match_index_path/2
+      * match_index_path/3
+      * match_index_path/4
+      * matchday_index_path/2
+      * matchday_index_path/3
+
+  lib/gwordle_web/live/matchweek_live/show.html.heex:26: GwordleWeb.MatchdayLive.Show.render/1
+
+[Warn  - 4:14:40 PM] warning: GwordleWeb.Router.Helpers.week_show_path/3 is undefined or private. Did you mean:
+
+      * league_show_path/3
+      * league_show_path/4
+
+Invalid call found at 3 locations:
+  lib/gwordle_web/live/matchweek_live/show.html.heex:4: GwordleWeb.MatchdayLive.Show.render/1
+  lib/gwordle_web/live/matchweek_live/show.html.heex:11: GwordleWeb.MatchdayLive.Show.render/1
+  lib/gwordle_web/live/matchweek_live/show.html.heex:25: GwordleWeb.MatchdayLive.Show.render/1
+
+[Warn  - 4:14:40 PM] warning: GwordleWeb.Router.Helpers.matchweek_index_path/2 is undefined or private. Did you mean:
+
+      * match_index_path/2
+      * match_index_path/3
+      * match_index_path/4
+      * matchday_index_path/2
+      * matchday_index_path/3
+
+Invalid call found at 3 locations:
+  lib/gwordle_web/live/matchweek_live/index.html.heex:4: GwordleWeb.MatchdayLive.Index.render/1
+  lib/gwordle_web/live/matchweek_live/index.html.heex:11: GwordleWeb.MatchdayLive.Index.render/1
+  lib/gwordle_web/live/matchweek_live/index.html.heex:39: GwordleWeb.MatchdayLive.Index.render/1
+
+[Warn  - 4:14:40 PM] warning: GwordleWeb.Router.Helpers.matchweek_index_path/3 is undefined or private. Did you mean:
+
+      * match_index_path/2
+      * match_index_path/3
+      * match_index_path/4
+      * matchday_index_path/2
+      * matchday_index_path/3
+
+  lib/gwordle_web/live/matchweek_live/index.html.heex:31: GwordleWeb.MatchdayLive.Index.render/1
+
+[Warn  - 4:14:40 PM] warning: GwordleWeb.Router.Helpers.week_show_path/3 is undefined or private. Did you mean:
+
+      * league_show_path/3
+      * league_show_path/4
+
+  lib/gwordle_web/live/matchweek_live/index.html.heex:30: GwordleWeb.MatchdayLive.Index.render/1
+
+Generated gwordle app
+[Info  - 4:14:40 PM] Compile took 45546 milliseconds
+[Info  - 4:14:40 PM] [ElixirLS WorkspaceSymbols] Indexing...
+MIX_ENV: test
+MIX_TARGET: 
+[Info  - 4:14:40 PM] [ElixirLS WorkspaceSymbols] Module discovery complete
+[Info  - 4:14:40 PM] [ElixirLS WorkspaceSymbols] 348 callbacks added to index
+[Info  - 4:14:42 PM] [ElixirLS WorkspaceSymbols] 1001 modules added to index
+[Info  - 4:14:42 PM] Compile took 1833 milliseconds
+[Info  - 4:14:42 PM] [ElixirLS Dialyzer] Checking for stale beam files
+[Info  - 4:14:42 PM] [ElixirLS WorkspaceSymbols] 910 types added to index
+[Info  - 4:14:44 PM] [ElixirLS Dialyzer] Found 817 changed files in 1720 milliseconds
+[Info  - 4:14:49 PM] [ElixirLS WorkspaceSymbols] 12637 functions added to index
+[Info  - 4:14:55 PM] [ElixirLS Dialyzer] Analyzing 817 modules: [DBConnection.Ownership, Ecto.Query.Tagged, Phoenix.LiveDashboard.PageNotFound, :ranch_transport, Bcrypt.Stats, Ecto.Query.Builder.From, Ecto.Changeset.Relation, Phoenix.HTML.Safe.Integer, Gettext.MissingBindingsError, Jason.Encoder.Float, Plug.Test, Plug.CSRFProtection.InvalidCSRFTokenError, Phoenix.HTML.Safe.Phoenix.LiveComponent.CID, Phoenix.Channel, Gettext.Compiler, Plug.RewriteOn, :gettext_po_parser, Phoenix.HTML.FormData.Plug.Conn, Phoenix.Config, Mix.Tasks.Esbuild, Gwordle.Matches.Matchday, Enumerable, Plug.Adapters.Cowboy2, Phoenix.LiveView.Helpers, Mint.Core.Transport, Floki.FilterOut, Plug.Exception, Ecto.Changeset, Phoenix.HTML.FormData.Atom, Plug.Conn.Cookies, Gwordle.Matches.MatchParticipant, :ranch_listener_sup, DBConnection.ConnectionPool.Pool, Swoosh.Adapters.Sendmail, GwordleWeb.LiveHelpers, Plug.Static.InvalidPathError, Swoosh.Email.Recipient, Phoenix.LiveDashboard.AppInfoComponent, Phoenix.Ecto.PendingMigrationError, Gwordle.Competitions.League, Phoenix.LiveDashboard.OSMonPage, Telemetry.Metrics.ConsoleReporter, Gwordle.CompetitionsFixtures, Ecto.Query.Builder.Filter, Jason.Encode, Ecto.Repo.Preloader, Ecto.Migration.Reference, Jason.Helpers, Swoosh.Email.Recipient.Any, Jason.EncodeError, ...]
+
+16:14:55.336 [error] Process #PID<0.21150.1> raised an exception
+** (ErlangError) Erlang error: {:badrecord, {:analysis, :undefined, :succ_typings, [], :undefined, ['/home/tommy/Dev/gwordle/.elixir_ls/build/_test/lib/db_connection/ebin/Elixir.DBConnection.Ownership.beam', '/home/tommy/Dev/gwordle/.elixir_ls/build/_test/lib/ecto/ebin/Elixir.Ecto.Query.Tagged.beam', '/home/tommy/Dev/gwordle/.elixir_ls/build/_test/lib/phoenix_live_dashboard/ebin/Elixir.Phoenix.LiveDashboard.PageNotFound.beam', '/home/tommy/Dev/gwordle/.elixir_ls/build/_test/lib/ranch/ebin/ranch_transport.beam', '/home/tommy/Dev/gwordle/.elixir_ls/build/_test/lib/bcrypt_elixir/ebin/Elixir.Bcrypt.Stats.beam', '/home/tommy/Dev/gwordle/.elixir_ls/build/_test/lib/ecto/ebin/Elixir.Ecto.Query.Builder.From.beam', '/home/tommy/Dev/gwordle/.elixir_ls/build/_test/lib/ecto/ebin/Elixir.Ecto.Changeset.Relation.beam', '/home/tommy/Dev/gwordle/.elixir_ls/build/_test/lib/phoenix_html/ebin/Elixir.Phoenix.HTML.Safe.Integer.beam', '/home/tommy/Dev/gwordle/.elixir_ls/build/_test/lib/gettext/ebin/Elixir.Gettext.MissingBindingsError.beam', '/home/tommy/Dev/gwordle/.elixir_ls/build/_test/lib/jason/ebin/Elixir.Jason.Encoder.Float.beam', '/home/tommy/Dev/gwordle/.elixir_ls/build/_test/lib/plug/ebin/Elixir.Plug.Test.beam', '/home/tommy/Dev/gwordle/.elixir_ls/build/_test/lib/plug/ebin/Elixir.Plug.CSRFProtection.InvalidCSRFTokenError.beam', '/home/tommy/Dev/gwordle/.elixir_ls/build/_test/lib/phoenix_live_view/ebin/Elixir.Phoenix.HTML.Safe.Phoenix.LiveComponent.CID.beam', '/home/tommy/Dev/gwordle/.elixir_ls/build/_test/lib/phoenix/ebin/Elixir.Phoenix.Channel.beam', '/home/tommy/Dev/gwordle/.elixir_ls/build/_test/lib/gettext/ebin/Elixir.Gettext.Compiler.beam', '/home/tommy/Dev/gwordle/.elixir_ls/build/_test/lib/plug/ebin/Elixir.Plug.RewriteOn.beam', '/home/tommy/Dev/gwordle/.elixir_ls/build/_test/lib/gettext/ebin/gettext_po_parser.beam', '/home/tommy/Dev/gwordle/.elixir_ls/build/_test/lib/phoenix_html/ebin/Elixir.Phoenix.HTML.FormData.Plug.Conn.beam', '/home/tommy/Dev/gwordle/.elixir_ls/build/_test/lib/phoenix/ebin/Elixir.Phoenix.Config.beam', '/home/tommy/Dev/gwordle/.elixir_ls/build/_test/lib/esbuild/ebin/Elixir.Mix.Tasks.Esbuild.beam', '/home/tommy/Dev/gwordle/.elixir_ls/build/_test/lib/gwordle/ebin/Elixir.Gwordle.Matches.Matchday.beam', '/home/tommy/Dev/gwordle/.elixir_ls/build/_test/lib/gwordle/consolidated/Elixir.Enumerable.beam', '/home/tommy/Dev/gwordle/.elixir_ls/build/_test/lib/plug/ebin/Elixir.Plug.Adapters.Cowboy2.beam', '/home/tommy/Dev/gwordle/.elixir_ls/build/_test/lib/phoenix_live_view/ebin/Elixir.Phoenix.LiveView.Helpers.beam', '/home/tommy/Dev/gwordle/.elixir_ls/build/_test/lib/mint/ebin/Elixir.Mint.Core.Transport.beam', '/home/tommy/Dev/gwordle/.elixir_ls/build/_test/lib/floki/ebin/Elixir.Floki.FilterOut.beam', '/home/tommy/Dev/gwordle/.elixir_ls/build/_test/lib/gwordle/consolidated/Elixir.Plug.Exception.beam', '/home/tommy/Dev/gwordle/.elixir_ls/build/_test/lib/ecto/ebin/Elixir.Ecto.Changeset.beam', '/home/tommy/Dev/gwordle/.elixir_ls/build/_test/lib/phoenix_html/ebin/Elixir.Phoenix.HTML.FormData.Atom.beam', '/home/tommy/Dev/gwordle/.elixir_ls/build/_test/lib/plug/ebin/Elixir.Plug.Conn.Cookies.beam', '/home/tommy/Dev/gwordle/.elixir_ls/build/_test/lib/gwordle/ebin/Elixir.Gwordle.Matches.MatchParticipant.beam', '/home/tommy/Dev/gwordle/.elixir_ls/build/_test/lib/ranch/ebin/ranch_listener_sup.beam', '/home/tommy/Dev/gwordle/.elixir_ls/build/_test/lib/db_connection/ebin/Elixir.DBConnection.ConnectionPool.Pool.beam', '/home/tommy/Dev/gwordle/.elixir_ls/build/_test/lib/swoosh/ebin/Elixir.Swoosh.Adapters.Sendmail.beam', '/home/tommy/Dev/gwordle/.elixir_ls/build/_test/lib/gwordle/ebin/Elixir.GwordleWeb.LiveHelpers.beam', '/home/tommy/Dev/gwordle/.elixir_ls/build/_test/lib/plug/ebin/Elixir.Plug.Static.InvalidPathError.beam', '/home/tommy/Dev/gwordle/.elixir_ls/build/_test/lib/gwordle/consolidated/Elixir.Swoosh.Email.Recipient.beam', '/home/tommy/Dev/gwordle/.elixir_ls/build/_test/lib/phoenix_live_dashboard/ebin/Elixir.Phoenix.LiveDashboard.AppInfoComponent.beam', '/home/tommy/Dev/gwordle/.elixir_ls/build/_test/lib/phoenix_ecto/ebin/Elixir.Phoenix.Ecto.PendingMigrationError.beam', '/home/tommy/Dev/gwordle/.elixir_ls/build/_test/lib/gwordle/ebin/Elixir.Gwordle.Competitions.League.beam', '/home/tommy/Dev/gwordle/.elixir_ls/build/_test/lib/phoenix_live_dashboard/ebin/Elixir.Phoenix.LiveDashboard.OSMonPage.beam', '/home/tommy/Dev/gwordle/.elixir_ls/build/_test/lib/telemetry_metrics/ebin/Elixir.Telemetry.Metrics.ConsoleReporter.beam', ...], [], :byte_code, {:plt, #Reference<0.3078371664.2998009861.235592>, #Reference<0.3078371664.2998009861.235594>, #Reference<0.3078371664.2998009861.235593>, #Reference<0.3078371664.2998009861.235595>, #Reference<0.3078371664.2998009861.235596>}, true, false, false, false, :none, [], []}}
+    dialyzer_analysis_callgraph.erl:70: :dialyzer_analysis_callgraph.start/3

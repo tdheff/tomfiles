@@ -1,0 +1,22 @@
+[2022-06-16T23:15:02.585Z] Log level: Info
+[2022-06-16T23:15:02.585Z] [info] Validating found git in: git
+[2022-06-16T23:15:02.593Z] [info] Using git 2.36.1 from git
+[2022-06-16T23:15:02.605Z] > git rev-parse --show-toplevel [4ms]
+[2022-06-16T23:15:02.614Z] > git rev-parse --git-dir --git-common-dir [1ms]
+[2022-06-16T23:15:02.620Z] [info] Open repository: /home/tommy/Dev/gwordle
+[2022-06-16T23:15:02.639Z] > git status -z -uall [14ms]
+[2022-06-16T23:15:02.647Z] > git symbolic-ref --short HEAD [5ms]
+[2022-06-16T23:15:02.653Z] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [2ms]
+[2022-06-16T23:15:02.661Z] > git remote --verbose [1ms]
+[2022-06-16T23:15:02.661Z] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [4ms]
+[2022-06-16T23:15:02.668Z] > git config --get commit.template [1ms]
+[2022-06-16T23:15:03.147Z] > git check-ignore -v -z --stdin [4ms]
+[2022-06-16T23:15:04.082Z] > git show --textconv :mix.exs [4ms]
+[2022-06-16T23:15:04.083Z] > git ls-files --stage -- /home/tommy/Dev/gwordle/mix.exs [2ms]
+[2022-06-16T23:15:04.087Z] > git cat-file -s bf9f911d86d2f561e245157e7ba7f43329479e78 [1ms]
+[2022-06-16T23:15:08.897Z] > git status -z -uall [2ms]
+[2022-06-16T23:15:08.901Z] > git symbolic-ref --short HEAD [0ms]
+[2022-06-16T23:15:08.906Z] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [1ms]
+[2022-06-16T23:15:08.912Z] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [3ms]
+[2022-06-16T23:15:08.913Z] > git remote --verbose [1ms]
+[2022-06-16T23:15:08.918Z] > git config --get commit.template [0ms]
